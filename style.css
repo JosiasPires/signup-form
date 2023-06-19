@@ -127,11 +127,19 @@ form, .bottomForm {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
-.wbox input:not(:focus):invalid {
+.wbox input:required:placeholder-shown {
+    outline: none;
+}
+
+.wbox input:not(:placeholder-shown):invalid {
     outline: 1px solid red;
 }
 
-/* Aqui */
+.wbox .hiddenalert {
+    color: red;
+    font-size: 0.7rem;
+    visibility: hidden;
+}
 
 .bottomForm button {
     background-color: #6b4235;
